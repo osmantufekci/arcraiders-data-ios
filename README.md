@@ -33,6 +33,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 All game content, including but not limited to game mechanics, items, names, and imagery, is copyright © Embark Studios AB. This repository is a community resource and is not affiliated with or endorsed by Embark Studios AB.
 
+## Community
+
+Join our Discord community to discuss ARC Raiders data, tools, and connect with other community developers:
+
+[![Discord](https://img.shields.io/discord/1234567890?color=7289DA&label=Discord&logo=discord&logoColor=white)](https://discord.gg/pAtQ4Aw8em)
+
 ## Contact
 
 For questions or suggestions, please open an issue in this repository.
