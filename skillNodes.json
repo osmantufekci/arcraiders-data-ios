@@ -1,0 +1,818 @@
+[
+  {
+    "id": "cond_1",
+    "name": "Youthful Lungs",
+    "description": "Increase your max stamina.",
+    "impactedSkill": "Max Stamina",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 5,
+    "iconName": "skill_running.png",
+    "isMajor": true,
+    "position": {
+      "x": 25,
+      "y": 75
+    },
+    "prerequisiteNodeIds": []
+  },
+  {
+    "id": "cond_2l",
+    "name": "Stubborn Mule",
+    "description": "Your stamina regeneration is less affected by being over-encumbered.",
+    "impactedSkill": "Stamina Regneration",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 5,
+    "iconName": "skill_weight.png",
+    "isMajor": false,
+    "position": {
+      "x": 20,
+      "y": 65
+    },
+    "prerequisiteNodeIds": [
+      "cond_1"
+    ]
+  },
+  {
+    "id": "cond_2r",
+    "name": "Proper Breathing",
+    "description": "Your stamina regenerates faster",
+    "impactedSkill": "Stamina Regneration",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 5,
+    "iconName": "skill_heart.png",
+    "isMajor": false,
+    "position": {
+      "x": 30,
+      "y": 65
+    },
+    "prerequisiteNodeIds": [
+      "cond_1"
+    ]
+  },
+  {
+    "id": "cond_3l",
+    "name": "Used To The Weight",
+    "description": "Wearing a shield doesn't slow you down as much.",
+    "impactedSkill": "Movement Speed",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 5,
+    "iconName": "skill_shield.png",
+    "isMajor": false,
+    "position": {
+      "x": 20,
+      "y": 55
+    },
+    "prerequisiteNodeIds": [
+      "cond_2l"
+    ]
+  },
+  {
+    "id": "cond_3r",
+    "name": "Three Deep Breaths",
+    "description": "After an ability drains your stamina, you recover more quickly.",
+    "impactedSkill": "Stamina Regneration",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 5,
+    "iconName": "skill_heart.png",
+    "isMajor": false,
+    "position": {
+      "x": 30,
+      "y": 55
+    },
+    "prerequisiteNodeIds": [
+      "cond_2r"
+    ]
+  },
+  {
+    "id": "cond_4l",
+    "name": "Good As New",
+    "description": "While under a healing effect, stamina regeneration is increased.",
+    "impactedSkill": "Stamina Regneration",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 1,
+    "iconName": "skill_heart.png",
+    "isMajor": true,
+    "position": {
+      "x": 20,
+      "y": 45
+    },
+    "prerequisiteNodeIds": [
+      "cond_3l"
+    ]
+  },
+  {
+    "id": "cond_4r",
+    "name": "Calming Stroll",
+    "description": "While walking, your stamina regenerates as if you were standing still.",
+    "impactedSkill": "Stamina Regneration",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 1,
+    "iconName": "skill_running.png",
+    "isMajor": true,
+    "position": {
+      "x": 30,
+      "y": 45
+    },
+    "prerequisiteNodeIds": [
+      "cond_3r"
+    ]
+  },
+  {
+    "id": "cond_5c",
+    "name": "Blast-Born",
+    "description": "Your hearing is less affected by nearby explosions.",
+    "impactedSkill": "Hearing Enhancement",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 5,
+    "iconName": "skill_hearing.png",
+    "isMajor": false,
+    "position": {
+      "x": 25,
+      "y": 35
+    },
+    "prerequisiteNodeIds": [
+      "cond_4l",
+      "cond_4r"
+    ]
+  },
+  {
+    "id": "cond_5l",
+    "name": "Broad Shoulders",
+    "description": "Increases the maximum weight you can carry.",
+    "impactedSkill": "Max Encumbrance",
+    "knownValue": [
+      "+2kg per point"
+    ],
+    "category": "CONDITIONING",
+    "maxPoints": 5,
+    "iconName": "skill_weight.png",
+    "isMajor": false,
+    "position": {
+      "x": 20,
+      "y": 35
+    },
+    "prerequisiteNodeIds": [
+      "cond_4l"
+    ]
+  },
+  {
+    "id": "cond_5r",
+    "name": "Sky-Clearing Swing",
+    "description": "You deal more melee damage to drones.",
+    "impactedSkill": "Melee Damage",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 5,
+    "iconName": "skill_pickaxe.png",
+    "isMajor": false,
+    "position": {
+      "x": 30,
+      "y": 35
+    },
+    "prerequisiteNodeIds": [
+      "cond_4r"
+    ]
+  },
+  {
+    "id": "cond_6c",
+    "name": "Sturdy Ankles",
+    "description": "You take less fall damage when falling from a non-lethal height.",
+    "impactedSkill": "Fall Damage Reduction",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 5,
+    "iconName": "skill_heart.png",
+    "isMajor": false,
+    "position": {
+      "x": 25,
+      "y": 25
+    },
+    "prerequisiteNodeIds": [
+      "cond_5c"
+    ]
+  },
+  {
+    "id": "cond_6l",
+    "name": "Loaded Arms",
+    "description": "Your equipped weapon has less impact on your encumbrance.",
+    "impactedSkill": "Encumbrance Reduction",
+    "category": "CONDITIONING",
+    "maxPoints": 1,
+    "iconName": "skill_weight.png",
+    "isMajor": false,
+    "position": {
+      "x": 20,
+      "y": 25
+    },
+    "prerequisiteNodeIds": [
+      "cond_5l"
+    ]
+  },
+  {
+    "id": "cond_6r",
+    "name": "Proficient Pryer",
+    "description": "Breaching doors and containers takes less time",
+    "impactedSkill": "Breach Time Reduction",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 5,
+    "iconName": "skill_pickaxe.png",
+    "isMajor": false,
+    "position": {
+      "x": 30,
+      "y": 25
+    },
+    "prerequisiteNodeIds": [
+      "cond_5r"
+    ]
+  },
+  {
+    "id": "cond_7l",
+    "name": "Security Breach",
+    "description": "Lets you breach Security Lockers.",
+    "impactedSkill": "Loot Option",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 1,
+    "iconName": "skill_pickaxe.png",
+    "isMajor": true,
+    "position": {
+      "x": 20,
+      "y": 15
+    },
+    "prerequisiteNodeIds": [
+      "cond_6l",
+      "cond_6c"
+    ]
+  },
+  {
+    "id": "cond_7r",
+    "name": "Flyswatter",
+    "description": "A single melee attack destroys a Tick, Pop, Wasp and Turret.",
+    "impactedSkill": "Melee Damage",
+    "knownValue": [],
+    "category": "CONDITIONING",
+    "maxPoints": 1,
+    "iconName": "skill_pickaxe.png",
+    "isMajor": true,
+    "position": {
+      "x": 30,
+      "y": 15
+    },
+    "prerequisiteNodeIds": [
+      "cond_6r",
+      "cond_6c"
+    ]
+  },
+  {
+    "id": "mob_1",
+    "name": "Nimble Climber",
+    "description": "You can climb and vault more quickly.",
+    "impactedSkill": "Climb and Vault Speed",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 5,
+    "iconName": "skill_climbing.png",
+    "isMajor": true,
+    "position": {
+      "x": 50,
+      "y": 75
+    },
+    "prerequisiteNodeIds": []
+  },
+  {
+    "id": "mob_2l",
+    "name": "Agile Croucher",
+    "description": "Your movement speed while crouching is increased.",
+    "impactedSkill": "Movement Speed",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 5,
+    "iconName": "skill_crouching.png",
+    "isMajor": false,
+    "position": {
+      "x": 45,
+      "y": 65
+    },
+    "prerequisiteNodeIds": [
+      "mob_1"
+    ]
+  },
+  {
+    "id": "mob_2r",
+    "name": "Marathon Runner",
+    "description": "Moving around costs less stamina.",
+    "impactedSkill": "Stamina Cost Reduction",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 5,
+    "iconName": "skill_running.png",
+    "isMajor": false,
+    "position": {
+      "x": 55,
+      "y": 65
+    },
+    "prerequisiteNodeIds": [
+      "mob_1"
+    ]
+  },
+  {
+    "id": "mob_3l",
+    "name": "Slip and Slide",
+    "description": "You can slide further and faster",
+    "impactedSkill": "Movement Speed",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 5,
+    "iconName": "skill_roll.png",
+    "isMajor": false,
+    "position": {
+      "x": 45,
+      "y": 55
+    },
+    "prerequisiteNodeIds": [
+      "mob_2l"
+    ]
+  },
+  {
+    "id": "mob_3r",
+    "name": "Effortless Roll",
+    "description": "Dodge Rolls cost less stamina.",
+    "impactedSkill": "Stamina Cost Reduction",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 5,
+    "iconName": "skill_roll.png",
+    "isMajor": false,
+    "position": {
+      "x": 55,
+      "y": 55
+    },
+    "prerequisiteNodeIds": [
+      "mob_2r"
+    ]
+  },
+  {
+    "id": "mob_4l",
+    "name": "Survivor's Stamina",
+    "description": "When you're critically hurt, your stamina regenerates faster.",
+    "impactedSkill": "Stamina Regneration",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 1,
+    "iconName": "skill_heart.png",
+    "isMajor": true,
+    "position": {
+      "x": 45,
+      "y": 45
+    },
+    "prerequisiteNodeIds": [
+      "mob_3l"
+    ]
+  },
+  {
+    "id": "mob_4r",
+    "name": "Carry The Momentum",
+    "description": "After a Sprint Dodge Roll, sprinting does not consume stamina for a short time. Has a cooldown between uses.",
+    "impactedSkill": "Stamina Cost Reduction",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 1,
+    "iconName": "skill_running.png",
+    "isMajor": true,
+    "position": {
+      "x": 55,
+      "y": 45
+    },
+    "prerequisiteNodeIds": [
+      "mob_3r"
+    ]
+  },
+  {
+    "id": "mob_5c",
+    "name": "Fight Or Flight",
+    "description": "When you're hurt in combat, regain a fixed amount of stamina. Has a 15-second cooldown between uses.",
+    "impactedSkill": "Stamina Regneration",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 5,
+    "iconName": "skill_running.png",
+    "isMajor": false,
+    "position": {
+      "x": 50,
+      "y": 35
+    },
+    "prerequisiteNodeIds": [
+      "mob_4l",
+      "mob_4r"
+    ]
+  },
+  {
+    "id": "mob_5l",
+    "name": "Off The Wall",
+    "description": "You can Wall Leap further.",
+    "impactedSkill": "Wall Leap Distance",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 5,
+    "iconName": "skill_vaulting.png",
+    "isMajor": false,
+    "position": {
+      "x": 45,
+      "y": 35
+    },
+    "prerequisiteNodeIds": [
+      "mob_4l"
+    ]
+  },
+  {
+    "id": "mob_5r",
+    "name": "Ready To Roll",
+    "description": "When falling, your timing window to perform a Recovery Roll is increased.",
+    "impactedSkill": "Recover Roll Window",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 5,
+    "iconName": "skill_vaulting.png",
+    "isMajor": false,
+    "position": {
+      "x": 55,
+      "y": 35
+    },
+    "prerequisiteNodeIds": [
+      "mob_4r"
+    ]
+  },
+  {
+    "id": "mob_6c",
+    "name": "Crawl Before You Walk",
+    "description": "When you're downed, you crawl faster.",
+    "impactedSkill": "Movement Speed",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 5,
+    "iconName": "skill_heartpulse.png",
+    "isMajor": false,
+    "position": {
+      "x": 50,
+      "y": 25
+    },
+    "prerequisiteNodeIds": [
+      "mob_5c"
+    ]
+  },
+  {
+    "id": "mob_6l",
+    "name": "Vigorous Vaulter",
+    "description": "Vaulting is no longer slowed down while exhausted.",
+    "impactedSkill": "Climb and Vault Speed",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 1,
+    "iconName": "skill_vaulting.png",
+    "isMajor": false,
+    "position": {
+      "x": 45,
+      "y": 25
+    },
+    "prerequisiteNodeIds": [
+      "mob_5l"
+    ]
+  },
+  {
+    "id": "mob_6r",
+    "name": "Heroic Leap",
+    "description": "You can Dodge Roll further.",
+    "impactedSkill": "Roll Distance",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 5,
+    "iconName": "skill_vaulting.png",
+    "isMajor": false,
+    "position": {
+      "x": 55,
+      "y": 25
+    },
+    "prerequisiteNodeIds": [
+      "mob_5r"
+    ]
+  },
+  {
+    "id": "mob_7l",
+    "name": "Vaults on Vaults on Vaults",
+    "description": "Vaulting no longer costs stamina.",
+    "impactedSkill": "Stamina Cost Reduction",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 1,
+    "iconName": "skill_vaulting.png",
+    "isMajor": true,
+    "position": {
+      "x": 45,
+      "y": 15
+    },
+    "prerequisiteNodeIds": [
+      "mob_6l",
+      "mob_6c"
+    ]
+  },
+  {
+    "id": "mob_7r",
+    "name": "Vault Spring",
+    "description": "Lets you jump at the end of a vault.",
+    "impactedSkill": "Vault Jump",
+    "knownValue": [],
+    "category": "MOBILITY",
+    "maxPoints": 1,
+    "iconName": "skill_vaulting.png",
+    "isMajor": true,
+    "position": {
+      "x": 55,
+      "y": 15
+    },
+    "prerequisiteNodeIds": [
+      "mob_6r",
+      "mob_6c"
+    ]
+  },
+  {
+    "id": "surv_1",
+    "name": "Looter's Instincts",
+    "description": "When searching a container, loot is revealed faster",
+    "impactedSkill": "Loot Speed",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 5,
+    "iconName": "skill_crate.png",
+    "isMajor": true,
+    "position": {
+      "x": 75,
+      "y": 75
+    },
+    "prerequisiteNodeIds": []
+  },
+  {
+    "id": "surv_2l",
+    "name": "Silent Scavenger",
+    "description": "You make less noise when looting.",
+    "impactedSkill": "Noise Reduction",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 5,
+    "iconName": "skill_pulse.png",
+    "isMajor": false,
+    "position": {
+      "x": 70,
+      "y": 65
+    },
+    "prerequisiteNodeIds": [
+      "surv_1"
+    ]
+  },
+  {
+    "id": "surv_2r",
+    "name": "Just Another Plant",
+    "description": "While crouched, you are less noticeable to ARC",
+    "impactedSkill": "ARC Aggro Reduction",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 5,
+    "iconName": "skill_blind.png",
+    "isMajor": false,
+    "position": {
+      "x": 80,
+      "y": 65
+    },
+    "prerequisiteNodeIds": [
+      "surv_1"
+    ]
+  },
+  {
+    "id": "surv_3l",
+    "name": "Gentle Pressure",
+    "description": "You make less noise when breaching.",
+    "impactedSkill": "Noise Reduction",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 5,
+    "iconName": "skill_pulse.png",
+    "isMajor": false,
+    "position": {
+      "x": 70,
+      "y": 55
+    },
+    "prerequisiteNodeIds": [
+      "surv_2l"
+    ]
+  },
+  {
+    "id": "surv_3r",
+    "name": "Distracting Aura",
+    "description": "ARC enemies are less accurate when targeting you.",
+    "impactedSkill": "ARC Accuracy Reduction",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 5,
+    "iconName": "skill_blind.png",
+    "isMajor": false,
+    "position": {
+      "x": 80,
+      "y": 55
+    },
+    "prerequisiteNodeIds": [
+      "surv_2r"
+    ]
+  },
+  {
+    "id": "surv_4l",
+    "name": "Suffer In Silence",
+    "description": "While critically hurt, your movement makes less noise.",
+    "impactedSkill": "Noise Reduction",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 1,
+    "iconName": "skill_pulse.png",
+    "isMajor": true,
+    "position": {
+      "x": 70,
+      "y": 45
+    },
+    "prerequisiteNodeIds": [
+      "surv_3l"
+    ]
+  },
+  {
+    "id": "surv_4r",
+    "name": "Unburdened Roll",
+    "description": "If your shield breaks, your first Dodge Roll within a few seconds does not cost stamina.",
+    "impactedSkill": "Stamina Cost Reduction",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 1,
+    "iconName": "skill_vaulting.png",
+    "isMajor": true,
+    "position": {
+      "x": 80,
+      "y": 45
+    },
+    "prerequisiteNodeIds": [
+      "surv_3r"
+    ]
+  },
+  {
+    "id": "surv_5c",
+    "name": "Traveling Tinkerer",
+    "description": "Unlocks additional items to field craft.",
+    "impactedSkill": "Field Crafting",
+    "knownValue": [
+      "Raider Hatch Key, Grenade Traps"
+    ],
+    "category": "SURVIVAL",
+    "maxPoints": 5,
+    "iconName": "skill_repair.png",
+    "isMajor": false,
+    "position": {
+      "x": 75,
+      "y": 35
+    },
+    "prerequisiteNodeIds": [
+      "surv_4l",
+      "surv_4r"
+    ]
+  },
+  {
+    "id": "surv_5l",
+    "name": "Looter's Luck",
+    "description": "While looting, there's a chance to reveal twice as many items at once.",
+    "impactedSkill": "Loot Find Chance",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 5,
+    "iconName": "skill_crate.png",
+    "isMajor": false,
+    "position": {
+      "x": 70,
+      "y": 35
+    },
+    "prerequisiteNodeIds": [
+      "surv_4l"
+    ]
+  },
+  {
+    "id": "surv_5r",
+    "name": "Downed But Determined",
+    "description": "When you're downed, it takes longer before you collapse.",
+    "impactedSkill": "Max Downtime",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 5,
+    "iconName": "skill_heart.png",
+    "isMajor": false,
+    "position": {
+      "x": 80,
+      "y": 35
+    },
+    "prerequisiteNodeIds": [
+      "surv_4r"
+    ]
+  },
+  {
+    "id": "surv_6c",
+    "name": "One Raider's Scraps",
+    "description": "When looting Raider containers, you have a small chance of finding additional field-crafted items.",
+    "impactedSkill": "Loot Find Chance",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 5,
+    "iconName": "skill_crate.png",
+    "isMajor": false,
+    "position": {
+      "x": 75,
+      "y": 25
+    },
+    "prerequisiteNodeIds": [
+      "surv_5c"
+    ]
+  },
+  {
+    "id": "surv_6l",
+    "name": "A Little Extra",
+    "description": "Breaching an object generates resources.",
+    "impactedSkill": "Loot Find Chance",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 1,
+    "iconName": "skill_pickaxe.png",
+    "isMajor": false,
+    "position": {
+      "x": 70,
+      "y": 25
+    },
+    "prerequisiteNodeIds": [
+      "surv_5l"
+    ]
+  },
+  {
+    "id": "surv_6r",
+    "name": "Turtle Crawl",
+    "description": "While downed, you take less damage.",
+    "impactedSkill": "Downtime Damage Reduction",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 5,
+    "iconName": "skill_heart.png",
+    "isMajor": false,
+    "position": {
+      "x": 80,
+      "y": 25
+    },
+    "prerequisiteNodeIds": [
+      "surv_5r"
+    ]
+  },
+  {
+    "id": "surv_7l",
+    "name": "Minesweeper",
+    "description": "Mines and explosive deployables can be defused when in close proximity",
+    "impactedSkill": "Explosive Defuse",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 1,
+    "iconName": "skill_target.png",
+    "isMajor": true,
+    "position": {
+      "x": 70,
+      "y": 15
+    },
+    "prerequisiteNodeIds": [
+      "surv_6l",
+      "surv_6c"
+    ]
+  },
+  {
+    "id": "surv_7r",
+    "name": "Back On Your Feet",
+    "description": "When you're critically hurt, your health regenerates until a certain limit.",
+    "impactedSkill": "Health Regeneration",
+    "knownValue": [],
+    "category": "SURVIVAL",
+    "maxPoints": 1,
+    "iconName": "skill_heart.png",
+    "isMajor": true,
+    "position": {
+      "x": 80,
+      "y": 15
+    },
+    "prerequisiteNodeIds": [
+      "surv_6r",
+      "surv_6c"
+    ]
+  }
+]
