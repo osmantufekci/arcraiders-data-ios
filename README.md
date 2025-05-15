@@ -10,6 +10,8 @@ The repository includes structured JSON data for:
 - Skill Nodes
 - Hideout Modules
 
+Item images in this repository are AI-upscaled versions created from in-game screenshots to provide higher quality assets for community tools.
+
 ## Purpose
 
 This data repository serves as the backbone for community developers to create tools for ARC Raiders, offering accurate and up-to-date information about ARC Raiders game mechanics, items, and progression systems. The data is structured to be easily consumable by web applications and tools.
@@ -28,6 +30,8 @@ Please ensure all contributed data is accurate.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+All game content, including but not limited to game mechanics, items, names, and imagery, is copyright © Embark Studios AB. This repository is a community resource and is not affiliated with or endorsed by Embark Studios AB.
 
 ## Contact
 
