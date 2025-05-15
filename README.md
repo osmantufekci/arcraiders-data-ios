@@ -35,9 +35,9 @@ All game content, including but not limited to game mechanics, items, names, and
 
 ## Community
 
-Join our Discord community to discuss ARC Raiders data, tools, and connect with other community developers:
+Join our Discord community to discuss ARC Raiders, tools, and connect with other community developers:
 
-[![Discord](https://img.shields.io/discord/1234567890?color=7289DA&label=Discord&logo=discord&logoColor=white)](https://discord.gg/pAtQ4Aw8em)
+[![Discord](https://img.shields.io/discord/1371502069374255265?color=7289DA&label=Discord&logo=discord&logoColor=white&label=Discord)](https://discord.gg/pAtQ4Aw8em)
 
 ## Contact
 
