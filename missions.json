@@ -45,7 +45,11 @@
     "id": "m6",
     "name": "HATCH REPAIRS",
     "objectives": ["Repair the leaking hydraulic pipes near a Raider Hatch", "Loot an ARC husk"],
-    "rewardItemIds": [{ "itemId": "raider_hatch_key", "quantityString": "1x" }], "xp": 6000
+    "rewardItemIds": [{ "itemId": "raider_hatch_key", "quantityString": "1x" }], "xp": 6000,
+    "communityHints": [
+      "The leaking hydraulic pipes are attached to the cement base near the ground, adjacent to any Raider Hatch.",
+      "ARC husks are any lootable derelict ARC already present on the map, not an ARC that's just been killed."
+    ]
   },
   {
     "id": "m7",
@@ -58,13 +62,15 @@
     "name": "SAFE PASSAGE",
     "grantedItemIds": [{ "itemId": "light_impact_grenade", "quantityString": "6x" }],
     "objectives": ["Destroy a Turret with a Light Impact Grenade"],
-    "rewardItemIds": [{ "itemId": "snap_grenade", "quantityString": "2x" }], "xp": 7000
+    "rewardItemIds": [{ "itemId": "snap_grenade", "quantityString": "2x" }], "xp": 7000,
+    "communityHints": ["A Light Impact Grenade must finish off the Turret, but a single Light Impact Grenade won't be enough on its own. Damage it first."]
   },
   {
     "id": "m9",
     "name": "FINDERS KEEPERS",
     "objectives": ["Loot 3x Containers in any Raider camp."],
-    "rewardItemIds": [{ "itemId": "heavy_fuse_grenade", "quantityString": "2x" }], "xp": 8000
+    "rewardItemIds": [{ "itemId": "heavy_fuse_grenade", "quantityString": "2x" }], "xp": 8000,
+    "communityHints": ["Raider camps are the derelict outposts spread around the map. Many of them have a tower with a spiral staircase. If you ping them from a distance, you'll see a ping label 'Raider Camp'."]
   },
   {
     "id": "m10",
@@ -107,7 +113,8 @@
     "name": "WHAT GOES AROUND",
     "objectives": ["Destroy a Fireball with a Fireball Burner"],
     "rewardItemIds": [{ "itemId": "blaze_grenades", "quantityString": "2x" }],
-    "xp": 12000
+    "xp": 12000,
+    "communityHints": ["A Fireball Burner must finish off the Fireball, but a single Fireball Burner won't be enough on its own. Damage it first."]
   },
   {
     "id": "m14",
@@ -118,6 +125,10 @@
     ],
     "requiredItemIds": [
       { "itemId": "arc_powercell", "quantity": 1 }
+    ],
+    "communityHints": [
+      "Baron Husks are the large, derelict ARCs that are still making groaning noises on the Dam and Spaceport maps.",
+      "To loot a Baron Husk: first climb on top of it, pry open the top, then immediately jump off, as it will catch fire and vent. After it cools down, it will be safe to loot."
     ]
   },
   {
@@ -139,7 +150,8 @@
     "rewardItemIds": [
       { "itemId": "sterilized_bandage", "quantityString": "3x" }
     ],
-    "xp": 14000
+    "xp": 14000,
+    "communityHints": ["The agricultural research is in a lab on the second floor above the lobby, roughly in the middle of the building."]
   },
   {
     "id": "m17",
@@ -147,7 +159,8 @@
     "objectives": [
       "In one round: Go to the Hydroponic Dome Complex",
       "Upload the data to the computer terminal in any Field Depot"
-    ]
+    ],
+    "communityHints": ["The building you want is the larger, longer one. Not the standalone small domes."]
   },
   {
     "id": "m18",
@@ -155,7 +168,8 @@
     "objectives": [
       "In one round: Go to the Research Building",
       "Search for the seed vault in the 'room with a great view'"
-    ]
+    ],
+    "communityHints": ["On the second or third floor, find the room with large windows and a lab inside, roughly in the middle of the building."]
   },
   {
     "id": "m19",
@@ -171,6 +185,10 @@
     "objectives": [
       "Locate the Santa Maria Houses in Old Town",
       "Locate the Dead Drop inside the Santa Maria Houses in Old Town"
+    ],
+    "communityHints": [
+      "The building you want is the South East one.",
+      "The Dead Drop is in fountain in the middle of a large open room on the bottom floor."
     ]
   },
   {
@@ -216,7 +234,8 @@
     "name": "SPARKS FLY",
     "objectives": [
       "Destroy a Hornet with a Snap Blast Grenade"
-    ]
+    ],
+    "communityHints": ["A Snap Blast Grenade must finish off the Hornet, but a single Snap Blast Grenade won't be enough on its own. Damage it first."]
   },
   {
     "id": "m26",
@@ -227,6 +246,11 @@
       "Install the battery in the Generator",
       "Enable the power on the Generator",
       "Boot the antenna terminal near the Red Tower"
+    ],
+    "communityHints": [
+      "The Generator is down on the ground, just East of the Red Tower.",
+      "The missing battery cell is in a backpack on the ground, just North of the Generator. The battery cell will drop on the ground.",
+      "The Antenna Terminal at the base of the Red Tower"
     ]
   },
   {
@@ -236,7 +260,8 @@
       "In one round: Visit the Departure Building in Spaceport",
       "Find the Medical Exam Room inside the Departure Building",
       "Search for the records"
-    ]
+    ],
+    "communityHints": ["The records are on the second floor, in the northern corner of the building."]
   },
   {
     "id": "m28",
@@ -245,6 +270,10 @@
       "In one round: Locate the Flood Access Tunnel under the Red Lake Berm",
       "Find the intake to the District's Water Supply",
       "Sample the water"
+    ],
+    "communityHints": [
+      "Flood Access Tunnel is just East of the Dam Control Center Tower at lake level.",
+      "At the end of the Flood Access Tunnel, there's a pipe lying in water that you can take a sample from."
     ]
   },
   {
@@ -266,6 +295,10 @@
     "objectives": [
       "In one round: Find the tunnels under the Spaceport",
       "Find and turn the valve in the tunnels under Spaceport"
+    ],
+    "communityHints": [
+      "The tunnels form a semi-loop around the Spaceport building.",
+      "The valve is located around the middle of the loop, southwest of the Spaceport building, near a pair of collapsed ramps."
     ]
   },
   {
@@ -291,7 +324,8 @@
       "Document the pharmacist's family",
       "Document the pharmacist's taste",
       "Document the pharmacist's skills"
-    ]
+    ],
+    "communityHints": ["The Arbuso Farmacia is just North of the Piazza Arbusto, on the Eastern edge of Buried City."]
   },
   {
     "id": "m33",
