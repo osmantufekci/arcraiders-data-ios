@@ -1,323 +1,346 @@
 [
   {
     "id": "m1",
-    "name": "TOPSIDE",
+    "name": "Topside",
+    "trader": "Shani",
     "objectives": ["Go topside for the first time", "Optional - Ping any ARC"],
     "rewardItemIds": [
-      { "itemId": "ferro_i", "quantityString": "1x" },
-      { "itemId": "heavy_ammo", "quantityString": "20x" }
+      { "itemId": "ferro_i", "quantity": 1 },
+      { "itemId": "heavy_ammo", "quantity": 20 }
     ],
     "xp": 4000
   },
   {
     "id": "m2",
-    "name": "THE BANDAGE RUN",
-    "objectives": ["Loot 5 containers"],
+    "name": "The Bandage Run",
+    "trader": "Lance",
+    "objectives": ["Search 5 containers", "Get 15 pieces of Fabric for Lance"],
     "requiredItemIds": [{ "itemId": "fabric", "quantity": 15 }],
-    "rewardItemIds": [{ "itemId": "herbal_bandages", "quantityString": "3x" }],
+    "rewardItemIds": [{ "itemId": "herbal_bandages", "quantity": 3 }],
     "xp": 4000
   },
   {
     "id": "m3",
-    "name": "SMALL, BUT SINISTER",
-    "objectives": ["Destroy a Tick"],
+    "name": "Small, But Sinister",
+    "trader": "Shani",
+    "objectives": ["Destroy a Tick", "Get a Tick Pod for Shani"],
     "requiredItemIds": [{ "itemId": "tick_pod", "quantity": 1 }],
-    "rewardItemIds": [{ "itemId": "lure_grenade", "quantityString": "2x" }],
+    "rewardItemIds": [{ "itemId": "lure_grenade", "quantity": 2 }],
     "xp": 5000
   },
   {
     "id": "m4",
-    "name": "CONTROLLED DEMOLITION",
-    "objectives": [],
+    "name": "Controlled Demolition",
+    "trader": "Apollo",
+    "objectives": ["Get 2 Explosive Mixtures for Apollo"],
     "requiredItemIds": [{ "itemId": "explosive_mixture", "quantity": 2 }],
-    "rewardItemIds": [{ "itemId": "jump_mines", "quantityString": "2x" }],
+    "rewardItemIds": [{ "itemId": "jump_mines", "quantity": 2 }],
     "xp": 5000
   },
   {
     "id": "m5",
-    "name": "FIGHT FIRE WITH FIRE",
-    "grantedItemIds": [{ "itemId": "ferro_iv", "quantityString": "1x" }],
+    "name": "Fight Fire With Fire",
+    "trader": "Tian Wen",
     "objectives": ["Destroy a Fireball with a Ferro"],
-    "rewardItemIds": [{ "itemId": "blaze_grenades", "quantityString": "3x" }],
+    "rewardItemIds": [{ "itemId": "blaze_grenades", "quantity": 3 }],
     "xp": 5000
   },
   {
     "id": "m6",
-    "name": "HATCH REPAIRS",
-    "objectives": ["Repair the leaking hydraulic pipes near a Raider Hatch", "Loot an ARC husk"],
-    "rewardItemIds": [{ "itemId": "raider_hatch_key", "quantityString": "1x" }], "xp": 6000,
-    "communityHints": [
-      "The leaking hydraulic pipes are attached to the cement base near the ground, adjacent to any Raider Hatch.",
-      "ARC husks are any lootable derelict ARC already present on the map, not an ARC that's just been killed."
-    ]
+    "name": "Hatch Repairs",
+    "trader": "Shani",
+    "objectives": ["Repair the leaking hydraulic pipes near a Raider Hatch", "Investigate the ARC husk near the hatch"],
+    "rewardItemIds": [{ "itemId": "raider_hatch_key", "quantity": 1 }],
+    "xp": 6000
   },
   {
     "id": "m7",
-    "name": "A BAD FEELING",
-    "objectives": ["Search any ARC Probe, ARC Courier, or husk."],
-    "rewardItemIds": [{ "itemId": "raider_augment_i", "quantityString": "1x" }], "xp": 7000
+    "name": "A Bad Feeling",
+    "trader": "Celeste",
+    "objectives": ["Find and search any ARC Probe, ARC Courier, or husk"],
+    "rewardItemIds": [{ "itemId": "raider_augment_i", "quantity": 1 }],
+    "xp": 7000
   },
   {
     "id": "m8",
-    "name": "SAFE PASSAGE",
-    "grantedItemIds": [{ "itemId": "light_impact_grenade", "quantityString": "6x" }],
-    "objectives": ["Destroy a Turret with a Light Impact Grenade"],
-    "rewardItemIds": [{ "itemId": "snap_grenade", "quantityString": "2x" }], "xp": 7000,
-    "communityHints": ["A Light Impact Grenade must finish off the Turret, but a single Light Impact Grenade won't be enough on its own. Damage it first."]
+    "name": "Safe Passage",
+    "trader": "Apollo",
+    "objectives": ["Destroy a Turret using Light Impact Grenades"],
+    "rewardItemIds": [{ "itemId": "snap_grenade", "quantity": 2 }],
+    "xp": 7000
   },
   {
     "id": "m9",
-    "name": "FINDERS KEEPERS",
-    "objectives": ["Loot 3x Containers in any Raider camp."],
-    "rewardItemIds": [{ "itemId": "heavy_fuse_grenade", "quantityString": "2x" }], "xp": 8000,
-    "communityHints": ["Raider camps are the derelict outposts spread around the map. Many of them have a tower with a spiral staircase. If you ping them from a distance, you'll see a ping label 'Raider Camp'."]
+    "name": "Finders Keepers",
+    "trader": "Tian Wen",
+    "objectives": ["Loot 3 containers in any Raider camp"],
+    "rewardItemIds": [{ "itemId": "heavy_fuse_grenade", "quantity": 2 }],
+    "xp": 8000
   },
   {
     "id": "m10",
-    "name": "WASPS AND HORNETS",
-    "objectives": ["Destroy 1x Wasp", "Destroy 1x Hornet"],
+    "name": "Wasps And Hornets",
+    "trader": "Shani",
+    "objectives": ["Destroy a Wasp", "Destroy a Hornet", "Get a Wasp Driver for Shani", "Get a Hornet Driver for Shani"],
     "requiredItemIds": [
       { "itemId": "wasp_driver", "quantity": 1 },
       { "itemId": "hornet_driver", "quantity": 1 }
     ],
     "rewardItemIds": [
-      { "itemId": "wasp_driver", "quantityString": "1x" },
-      { "itemId": "hornet_driver", "quantityString": "1x" },
-      { "itemId": "mechanical_components", "quantityString": "1x" },
-      { "itemId": "electrical_components", "quantityString": "1x" }
+      { "itemId": "wasp_driver", "quantity": 1 },
+      { "itemId": "hornet_driver", "quantity": 1 },
+      { "itemId": "mechanical_components", "quantity": 1 },
+      { "itemId": "electrical_components", "quantity": 1 }
     ],
     "xp": 9000
   },
   {
     "id": "m11",
-    "name": "MOVIE NIGHT",
-    "objectives": [],
+    "name": "Movie Night",
+    "trader": "Apollo",
+    "objectives": ["Get a Film Reel for Apollo", "Get 3 Electrical Components for Apollo", "Get a Camera Lens for Apollo"],
     "requiredItemIds": [
-      { "itemId": "camera_lens", "quantity": 1 },
       { "itemId": "film_reel", "quantity": 1 },
-      { "itemId": "electrical_components", "quantity": 3 }
+      { "itemId": "electrical_components", "quantity": 3 },
+      { "itemId": "camera_lens", "quantity": 1 }
     ],
-    "rewardItemIds": [{ "itemId": "showstopper", "quantityString": "2x" }],
+    "rewardItemIds": [{ "itemId": "showstopper", "quantity": 2 }],
     "xp": 9000
   },
   {
     "id": "m12",
-    "name": "FROM A DISTANCE",
-    "grantedItemIds": [{ "itemId": "binoculars", "quantityString": "1x" }],
-    "objectives": ["Ping 1x Rocketeer", "Ping 1x Bison"],
-    "rewardItemIds": [{ "itemId": "photoelectric_cloak", "quantityString": "1x" }],
+    "name": "From A Distance",
+    "trader": "Shani",
+    "objectives": ["Ping a Rocketeer", "Ping a Bison"],
+    "rewardItemIds": [{ "itemId": "photoelectric_cloak", "quantity": 1 }],
     "xp": 10000
   },
   {
     "id": "m13",
-    "name": "WHAT GOES AROUND",
-    "objectives": ["Destroy a Fireball with a Fireball Burner"],
-    "rewardItemIds": [{ "itemId": "blaze_grenades", "quantityString": "2x" }],
-    "xp": 12000,
-    "communityHints": ["A Fireball Burner must finish off the Fireball, but a single Fireball Burner won't be enough on its own. Damage it first."]
+    "name": "What Goes Around",
+    "trader": "Apollo",
+    "objectives": ["Destroy a Fireball using a Fireball Burner"],
+    "rewardItemIds": [{ "itemId": "blaze_grenades", "quantity": 2 }],
+    "xp": 12000
   },
   {
     "id": "m14",
-    "name": "DORMANT BARONS",
-    "objectives": [
-      "Find and loot a Baron Husk",
-      "Get an ARC Powercell for Shani"
-    ],
-    "requiredItemIds": [
-      { "itemId": "arc_powercell", "quantity": 1 }
-    ],
-    "communityHints": [
-      "Baron Husks are the large, derelict ARCs that are still making groaning noises on the Dam and Spaceport maps.",
-      "To loot a Baron Husk: first climb on top of it, pry open the top, then immediately jump off, as it will catch fire and vent. After it cools down, it will be safe to loot."
-    ]
+    "name": "Dormant Barons",
+    "trader": "Shani",
+    "objectives": ["Find and loot a Baron Husk", "Get an ARC Powercell for Shani"],
+    "requiredItemIds": [{ "itemId": "arc_powercell", "quantity": 1 }],
+    "rewardItemIds": [{ "itemId": "silencer_i", "quantity": 1 }],
+    "xp": 130000
   },
   {
     "id": "m15",
-    "name": "OUR PRESENCE UP THERE",
+    "name": "Our Presence Up There",
+    "trader": "Shani",
     "objectives": [
-      "In one round: Visit the Pattern House in The Dam",
+      "Visit the Pattern House in The Dam",
       "Find and interact with the Power Switch",
       "Complete the antenna installation on the roof"
-    ]
+    ],
+    "rewardItemIds": [{ "itemId": "silencer_i_recipe", "quantity": 1 }],
+    "xp": 14000
   },
   {
     "id": "m16",
-    "name": "A BALANCED HARVEST",
+    "name": "A Balanced Harvest",
+    "trader": "Celeste",
     "objectives": [
-      "In one round: Go to the Research & Administration building",
+      "Go to the Research & Administration building",
       "Search for any traces of the agricultural research project"
     ],
-    "rewardItemIds": [
-      { "itemId": "sterilized_bandage", "quantityString": "3x" }
-    ],
-    "xp": 14000,
-    "communityHints": ["The agricultural research is in a lab on the second floor above the lobby, roughly in the middle of the building."]
+    "rewardItemIds": [{ "itemId": "sterilized_bandage", "quantity": 3 }],
+    "xp": 14000
   },
   {
     "id": "m17",
-    "name": "UNTENDED GARDEN",
+    "name": "Untended Garden",
+    "trader": "Celeste",
     "objectives": [
-      "In one round: Go to the Hydroponic Dome Complex",
+      "Go to the Hydroponic Dome Complex",
       "Upload the data to the computer terminal in any Field Depot"
     ],
-    "communityHints": ["The building you want is the larger, longer one. Not the standalone small domes."]
+    "rewardItemIds": [{ "itemId": "vita_shot", "quantity": 1 }],
+    "xp": 15000
   },
   {
     "id": "m18",
-    "name": "THE ROOT OF THE MATTER",
+    "name": "The Root Of The Matter",
+    "trader": "Celeste",
     "objectives": [
-      "In one round: Go to the Research Building",
-      "Search for the seed vault in the 'room with a great view'"
+      "Go to the Research Building",
+      "Search for the seed vault in the \"room with a great view\""
     ],
-    "communityHints": ["On the second or third floor, find the room with large windows and a lab inside, roughly in the middle of the building."]
+    "rewardItemIds": [{ "itemId": "vita_spray", "quantity": 1 }],
+    "xp": 16000
   },
   {
     "id": "m19",
-    "name": "HANDOVER",
+    "name": "Handover",
+    "trader": "Tian Wen",
     "objectives": [
-      "In one round: Visit the Pattern House in the Dam",
+      "Visit the Pattern House in the Dam",
       "Mark the Pattern Outpost"
-    ]
+    ],
+    "rewardItemIds": [{ "itemId": "jolt_mine", "quantity": 2 }],
+    "xp": 17000
   },
   {
     "id": "m20",
-    "name": "DIGGING UP DIRT",
+    "name": "Tribute To Toledo",
+    "trader": "Celeste",
+    "objectives": ["Get an ARC Powercell for Celeste"],
+    "requiredItemIds": [{ "itemId": "arc_powercell", "quantity": 1 }],
+    "rewardItemIds": [{ "itemId": "damn_staff_room_key", "quantity": 1 }],
+    "xp": 19000
+  },
+  {
+    "id": "m21",
+    "name": "Digging Up Dirt",
+    "trader": "Celeste",
     "objectives": [
       "Locate the Santa Maria Houses in Old Town",
       "Locate the Dead Drop inside the Santa Maria Houses in Old Town"
     ],
-    "communityHints": [
-      "The building you want is the South East one.",
-      "The Dead Drop is in fountain in the middle of a large open room on the bottom floor."
-    ]
-  },
-  {
-    "id": "m21",
-    "name": "LANCE'S TEA PARTY",
-    "objectives": [
-      "Get 2 Rubber Ducks for Lance",
-      "Get 2 Faded Photographs for Lance"
-    ],
-    "requiredItemIds": [
-      { "itemId": "rubber_duck", "quantity": 2 },
-      { "itemId": "faded_photograph", "quantity": 2 }
-    ]
+    "rewardItemIds": [{ "itemId": "buried_city_residential_master_key", "quantity": 1 }],
+    "xp": 21000
   },
   {
     "id": "m22",
-    "name": "BUILDING A LIBRARY",
-    "objectives": [
-      "In one round: Locate the Library in the City Center",
-      "Find 1 romance book",
-      "Find 1 detective book",
-      "Find 1 adventure book"
-    ]
-  },
-  {
-    "id": "m23",
-    "name": "AFTER RAIN COMES",
-    "objectives": [
-      "Find the flooded solar panels nearby the Grandioso Apartments",
-      "Repair the solar panels"
-    ]
-  },
-  {
-    "id": "m24",
-    "name": "TURNABOUT",
+    "name": "Turnabout",
+    "trader": "Celeste",
     "objectives": [
       "Go to the North Trench Tower",
       "Locate and upload the Blackmail Files to Celeste"
-    ]
+    ],
+    "rewardItemIds": [{ "itemId": "barricade_kit", "quantity": 2 }],
+    "xp": 23000
+  },
+  {
+    "id": "m23",
+    "name": "Lance'S Tea Party",
+    "trader": "Lance",
+    "objectives": ["Get 2 Rubber Ducks for Lance", "Get 2 Faded Photographs for Lance"],
+    "requiredItemIds": [
+      { "itemId": "rubber_duck", "quantity": 2 },
+      { "itemId": "faded_photograph", "quantity": 2 }
+    ],
+    "rewardItemIds": [{ "itemId": "defibrillator", "quantity": 2 }],
+    "xp": 18000
+  },
+  {
+    "id": "m24",
+    "name": "Building A Library",
+    "trader": "Apollo",
+    "objectives": [
+      "Locate the Library in the City Center",
+      "Find 1 romance book",
+      "Find 1 detective book",
+      "Find 1 adventure book"
+    ],
+    "rewardItemIds": [{ "itemId": "buried_city_town_hall_key", "quantity": 1 }],
+    "xp": 20000
   },
   {
     "id": "m25",
-    "name": "SPARKS FLY",
+    "name": "After Rain Comes",
+    "trader": "Celeste",
     "objectives": [
-      "Destroy a Hornet with a Snap Blast Grenade"
+      "Find the flooded solar panels nearby the Grandioso Apartments",
+      "Repair the solar panels"
     ],
-    "communityHints": ["A Snap Blast Grenade must finish off the Hornet, but a single Snap Blast Grenade won't be enough on its own. Damage it first."]
+    "rewardItemIds": [{ "itemId": "showstopper", "quantity": 2 }],
+    "xp": 24000
   },
   {
     "id": "m26",
-    "name": "COMMUNICATION HIDEOUT",
+    "name": "Sparks Fly",
+    "trader": "Apollo",
+    "objectives": ["Destroy a Hornet with a Snap Blast Grenade"],
+    "rewardItemIds": [{ "itemId": "trigger_nade", "quantity": 2 }],
+    "xp": 22000
+  },
+  {
+    "id": "m27",
+    "name": "Communication Hideout",
+    "trader": "Shani",
     "objectives": [
-      "In one round: Reach the Red Tower in Old Town",
+      "Reach the Red Tower in Old Town",
       "Find missing battery cell",
       "Install the battery in the Generator",
       "Enable the power on the Generator",
       "Boot the antenna terminal near the Red Tower"
     ],
-    "communityHints": [
-      "The Generator is down on the ground, just East of the Red Tower.",
-      "The missing battery cell is in a backpack on the ground, just North of the Generator. The battery cell will drop on the ground.",
-      "The Antenna Terminal at the base of the Red Tower"
-    ]
-  },
-  {
-    "id": "m27",
-    "name": "PRESCRIPTIONS OF THE PAST",
-    "objectives": [
-      "In one round: Visit the Departure Building in Spaceport",
-      "Find the Medical Exam Room inside the Departure Building",
-      "Search for the records"
-    ],
-    "communityHints": ["The records are on the second floor, in the northern corner of the building."]
+    "rewardItemIds": [{ "itemId": "zipline", "quantity": 2 }],
+    "xp": 25000
   },
   {
     "id": "m28",
-    "name": "WATER TROUBLES",
+    "name": "Prescriptions Of The Past",
+    "trader": "Lance",
     "objectives": [
-      "In one round: Locate the Flood Access Tunnel under the Red Lake Berm",
-      "Find the intake to the District's Water Supply",
-      "Sample the water"
+      "Visit the Departure Building in Spaceport",
+      "Find the Medical Exam Room inside the Departure Building",
+      "Search for the records"
     ],
-    "communityHints": [
-      "Flood Access Tunnel is just East of the Dam Control Center Tower at lake level.",
-      "At the end of the Flood Access Tunnel, there's a pipe lying in water that you can take a sample from."
-    ]
+    "rewardItemIds": [{ "itemId": "spaceport_container_storage_key", "quantity": 1 }],
+    "xp": 25000
   },
   {
     "id": "m29",
-    "name": "SOURCE OF THE CONTAMINATION",
+    "name": "Water Troubles",
+    "trader": "Celeste",
+    "objectives": [
+      "Locate the Flood Access Tunnel under the Red Lake Berm",
+      "Find the intake to the District's Water Supply",
+      "Sample the water"
+    ],
+    "rewardItemIds": [{ "itemId": "burletta_i", "quantity": 1 }],
+    "xp": 26000
+  },
+  {
+    "id": "m30",
+    "name": "Source Of The Contamination",
+    "trader": "Celeste",
     "objectives": [
       "Reach the Water Treatment Building in The Dam",
       "Search for the Flood Spill Intake near the Swamp",
       "Investigate any suspicious objects"
     ],
-    "rewardItemIds": [
-      { "itemId": "burletta_recipe", "quantityString": "1x" }
-    ],
+    "rewardItemIds": [{ "itemId": "burletta_recipe", "quantity": 1 }],
     "xp": 27000
   },
   {
-    "id": "m30",
-    "name": "SWITCHING THE SUPPLY",
+    "id": "m31",
+    "name": "Switching The Supply",
+    "trader": "Celeste",
     "objectives": [
-      "In one round: Find the tunnels under the Spaceport",
+      "Find the tunnels under the Spaceport",
       "Find and turn the valve in the tunnels under Spaceport"
     ],
-    "communityHints": [
-      "The tunnels form a semi-loop around the Spaceport building.",
-      "The valve is located around the middle of the loop, southwest of the Spaceport building, near a pair of collapsed ramps."
-    ]
+    "rewardItemIds": [{ "itemId": "spaceport_warehouse_key", "quantity": 1 }],
+    "xp": 28000
   },
   {
-    "id": "m31",
-    "name": "UNEXPECTED INITIATIVE",
-    "objectives": [
-      "Obtain a Water Filter",
-      "Obtain 3 Lemons",
-      "Obtain a Water Pump"
-    ],
+    "id": "m32",
+    "name": "Unexpected Initiative",
+    "trader": "Tian Wen",
+    "objectives": ["Obtain a Water Filter", "Obtain 3 Lemons", "Obtain a Water Pump"],
     "requiredItemIds": [
       { "itemId": "water_filter", "quantity": 1 },
       { "itemId": "lemon", "quantity": 3 },
       { "itemId": "water_pump", "quantity": 1 }
-    ]
+    ],
+    "rewardItemIds": [{ "itemId": "osprey_i", "quantity": 1 }],
+    "xp": 28000
   },
   {
-    "id": "m32",
-    "name": "LIFE OF A PHARMACIST",
+    "id": "m33",
+    "name": "Life Of A Pharmacist",
+    "trader": "Lance",
     "objectives": [
       "Find the Arbuso Farmacia then search the apartment above",
       "Document the pharmacist's hobbies",
@@ -325,54 +348,56 @@
       "Document the pharmacist's taste",
       "Document the pharmacist's skills"
     ],
-    "communityHints": ["The Arbuso Farmacia is just North of the Piazza Arbusto, on the Eastern edge of Buried City."]
-  },
-  {
-    "id": "m33",
-    "name": "POWERING UP THE GREENHOUSE",
-    "objectives": [
-      "Get 3 Sensors for Tian Wen",
-      "Get Advanced Electrical Components for Tian Wen"
-    ],
-    "requiredItemIds": [
-      { "itemId": "sensor", "quantity": 3 },
-      { "itemId": "advanced_electrical_components", "quantity": 1 }
-    ],
-    "rewardItemIds": [
-      { "itemId": "raider_augment_iii", "quantityString": "1x" }
-    ],
+    "rewardItemIds": [{ "itemId": "buried_city_hospital_key", "quantity": 1 }],
     "xp": 29000
   },
   {
     "id": "m34",
-    "name": "THE LEAGUE",
-    "objectives": [
-      "In one Round: Get a Deflated Football for Apollo",
-      "Get a Duct Tape for Apollo"
-    ],
+    "name": "Powering Up The Greenhouse",
+    "trader": "Tian Wen",
+    "objectives": ["Get 3 Sensors for Tian Wen", "Get Advanced Electrical Components for Tian Wen"],
     "requiredItemIds": [
-      { "itemId": "deflated_football", "quantity": 1 },
-      { "itemId": "duct_tape", "quantity": 1 }
-    ]
+      { "itemId": "sensor", "quantity": 3 },
+      { "itemId": "advanced_electrical_components", "quantity": 1 }
+    ],
+    "rewardItemIds": [{ "itemId": "raider_augment_iii", "quantity": 1 }],
+    "xp": 29000
   },
   {
     "id": "m35",
-    "name": "SOAKING UP THE SUN",
-    "objectives": [
-      "Find the secluded roof terrace south-west of the Southern Station, look for blue tarps.",
-      "Rewire the solar panel"
-    ]
+    "name": "The League",
+    "trader": "Apollo",
+    "objectives": ["Get a Deflated Football for Apollo", "Get a Duct Tape for Apollo"],
+    "requiredItemIds": [
+      { "itemId": "deflated_football", "quantity": 1 },
+      { "itemId": "duct_tape", "quantity": 1 }
+    ],
+    "rewardItemIds": [{ "itemId": "padded_stock", "quantity": 1 }],
+    "xp": 30000
   },
   {
     "id": "m36",
-    "name": "ESPRESSO",
+    "name": "Soaking Up The Sun",
+    "trader": "Tian Wen",
     "objectives": [
-      "In one round: Find an espresso machine to salvage for spare parts"
-    ]
+      "Find the secluded roof terrace south-west of the Southern Station, look for blue tarps.",
+      "Rewire the solar panel"
+    ],
+    "rewardItemIds": [{ "itemId": "padded_stock_recipe", "quantity": 1 }],
+    "xp": 30000
   },
   {
     "id": "m37",
-    "name": "PIED PIPER",
+    "name": "Espresso",
+    "trader": "Apollo",
+    "objectives": ["Find an espresso machine to salvage for spare parts"],
+    "rewardItemIds": [{ "itemId": "adrenaline_shot", "quantity": 3 }],
+    "xp": 31000
+  },
+  {
+    "id": "m38",
+    "name": "Pied Piper",
+    "trader": "Apollo",
     "objectives": [
       "Get a Flute for Apollo",
       "Get an Apricot for Apollo",
@@ -386,91 +411,89 @@
       { "itemId": "empty_wine_bottle", "quantity": 1 },
       { "itemId": "light_impact_grenade", "quantity": 3 },
       { "itemId": "oil", "quantity": 1 }
-    ]
-  },
-  {
-    "id": "m38",
-    "name": "A BETTER USE",
-    "objectives": [
-      "Request in a Supply Drop from a Call Station",
-      "Loot a Supply Drop"
-    ]
+    ],
+    "rewardItemIds": [{ "itemId": "gas_grenades", "quantity": 3 }],
+    "xp": 31000
   },
   {
     "id": "m39",
-    "name": "MIXED SIGNALS",
-    "objectives": [
-      "Place a Jolt Mine",
-      "Destroy a Rollbot with a Raider Tool"
-    ]
+    "name": "A Better Use",
+    "trader": "Tian Wen",
+    "objectives": ["Request in a Supply Drop from a Call Station", "Loot a Supply Drop"],
+    "rewardItemIds": [{ "itemId": "torrente_i", "quantity": 1 }],
+    "xp": 32000
   },
   {
     "id": "m40",
-    "name": "POWER OUT",
-    "objectives": [
-      "In one round: Find the Electrical Substation south of the Spaceport, next to the Checkpoint",
-      "Find any sign of the missing engineer",
-      "Carry the fuse/battery back to the Electrical Substation",
-      "Enable the power switch on the Fuse Box"
-    ]
+    "name": "Mixed Signals",
+    "trader": "Shani",
+    "objectives": ["Place a Jolt Mine", "Destroy a Rollbot with a Raider Tool"],
+    "rewardItemIds": [{ "itemId": "photoelectric_cloak", "quantity": 1 }],
+    "xp": 32000
   },
   {
     "id": "m41",
-    "name": "FLICKERING THREAT",
+    "name": "Power Out",
+    "trader": "Celeste",
+    "objectives": [
+      "Find the Electrical Substation south of the Spaceport, next to the Checkpoint",
+      "Find any sign of the missing engineer",
+      "Carry the fuse/battery back to the Electrical Substation",
+      "Enable the power switch on the Fuse Box"
+    ],
+    "rewardItemIds": [{ "itemId": "showstopper", "quantity": 2 }],
+    "xp": 32000
+  },
+  {
+    "id": "m42",
+    "name": "Flickering Threat",
+    "trader": "Celeste",
     "objectives": [
       "Enter the Power Generation Complex by The Dam",
       "Find the Generator Room",
       "Repair the Generator",
       "Find the Ventilation Shaft",
-      "Enable the power via the power switch undernearth the stairs"
-    ]
-  },
-  {
-    "id": "m42",
-    "name": "THE CONTROL TOWER",
-    "objectives": [
-      "In one round: Visit Control Tower B6",
-      "Reach the top of Control Tower B6",
-      "Interact with the data terminal at the top of Control Tower B6"
+      "Enable the power via the power switch underneath the stairs"
     ],
-    "rewardItemIds": [
-      { "itemId": "snap_hook", "quantityString": "1x" }
-    ],
+    "rewardItemIds": [{ "itemId": "dam_utility_key", "quantity": 1 }],
     "xp": 33000
   },
   {
     "id": "m43",
-    "name": "ESR ANALYZER?",
+    "name": "The Control Tower",
+    "trader": "Shani",
     "objectives": [
-      "In one round: Search for an ESR Analyzer inside any pharmacy in Buried City"
-    ]
+      "Visit Control Tower B6",
+      "Reach the top of Control Tower B6",
+      "Interact with the data terminal at the top of Control Tower B6"
+    ],
+    "rewardItemIds": [{ "itemId": "snap_hook", "quantity": 1 }],
+    "xp": 33000
   },
   {
     "id": "m44",
-    "name": "RAIDER VERSUS ROCKETEER",
-    "objectives": [
-      "Destroy a Rocketeer"
-    ],
-    "requiredItemIds": [
-      { "itemId": "rocketeer_part", "quantity": 1 }
-    ],
-    "rewardItemIds": [
-      { "itemId": "wolfpack", "quantityString": "2x" }
-    ],
+    "name": "ESR Analyzer?",
+    "trader": "Lance",
+    "objectives": ["Search for an ESR Analyzer inside any pharmacy in Buried City"],
+    "rewardItemIds": [{ "itemId": "tempest_i", "quantity": 1 }],
     "xp": 33000
   },
   {
     "id": "m45",
-    "name": "BRINGING DOWN A BISON",
-    "objectives": [
-      "Destroy a Bison"
-    ],
-    "requiredItemIds": [
-      { "itemId": "bison_driver", "quantity": 1 }
-    ],
-    "rewardItemIds": [
-      { "itemId": "equalizer", "quantityString": "1x" }
-    ],
+    "name": "Raider Versus Rocketeer",
+    "trader": "Shani",
+    "objectives": ["Destroy a Rocketeer", "Obtain a Rocketeer Part"],
+    "requiredItemIds": [{ "itemId": "rocketeer_part", "quantity": 1 }],
+    "rewardItemIds": [{ "itemId": "wolfpack", "quantity": 2 }],
+    "xp": 33000
+  },
+  {
+    "id": "m46",
+    "name": "Bringing Down A Bison",
+    "trader": "Shani",
+    "objectives": ["Destroy a Bison", "Obtain a Bison Driver"],
+    "requiredItemIds": [{ "itemId": "bison_driver", "quantity": 1 }],
+    "rewardItemIds": [{ "itemId": "equalizer", "quantity": 1 }],
     "xp": 34000
   }
 ]
