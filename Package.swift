@@ -18,8 +18,7 @@ let package = Package(
             name: "ArcRaidersData",
             dependencies: [],
             resources: [
-                .process("Data"),
-                .copy("Data/items.json")
+                .process("Data")
             ]
         )
     ]
