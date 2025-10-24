@@ -6,7 +6,7 @@ public class ArcRaidersDataInfo {
 
 extension Foundation.Bundle {
     /// Returns the resource bundle associated with the current Swift module.
-    static var module: Bundle = {
+    public static var module: Bundle = {
         let bundleName = "ArcRaidersData_ArcRaidersData"
         
         let candidates = [
