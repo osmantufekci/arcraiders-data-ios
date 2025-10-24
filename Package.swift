@@ -19,7 +19,7 @@ let package = Package(
             dependencies: [],
             resources: [
                 .process("Data"),
-                .copy("data/items.json")
+                .copy("Data/items.json")
             ]
         )
     ]
