@@ -1,2 +1,6 @@
 images/items/.DS_Store
 .DS_Store
+.swiftpm/xcode/xcuserdata/otufekci.xcuserdatad/xcschemes/xcschememanagement.plist
+*.xcworkspacedata
+*.xcuserstate
+
