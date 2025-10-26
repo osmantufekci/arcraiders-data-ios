@@ -34,23 +34,27 @@ public class ArcRaidersData {
         }
     }
 
+    public func loadArcs() throws -> Data {
+        return try loadData(from: "ardb_arcs")
+    }
+
+    public func craftingItems() throws -> Data {
+        return try loadData(from: "ardb_crafting_items")
+    }
+
+    public func hideouts() throws -> Data {
+        return try loadData(from: "ardb_hideouts")
+    }
+
     public func loadItemsData() throws -> Data {
-        return try loadData(from: "items")
+        return try loadData(from: "ardb_items")
     }
 
     public func loadQuestsData() throws -> Data {
-        return try loadData(from: "quests")
+        return try loadData(from: "ardb_quests")
     }
 
     public func loadSkillNodesData() throws -> Data {
         return try loadData(from: "skillNodes")
-    }
-
-    public func loadFactionsData() throws -> Data {
-        return try loadData(from: "factions")
-    }
-
-    public func loadLocationsData() throws -> Data {
-        return try loadData(from: "locations")
     }
 }
