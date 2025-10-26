@@ -103,7 +103,11 @@
     },
     "prerequisiteNodeIds": [
       "cond_3l"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "CONDITIONING",
+        "points": 15
+    }
   },
   {
     "id": "cond_4r",
@@ -121,7 +125,11 @@
     },
     "prerequisiteNodeIds": [
       "cond_3r"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "CONDITIONING",
+        "points": 15
+    }
   },
   {
     "id": "cond_5c",
@@ -248,7 +256,11 @@
     "prerequisiteNodeIds": [
       "cond_6l",
       "cond_6c"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "CONDITIONING",
+        "points": 36
+    }
   },
   {
     "id": "cond_7r",
@@ -267,7 +279,11 @@
     "prerequisiteNodeIds": [
       "cond_6r",
       "cond_6c"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "CONDITIONING",
+        "points": 36
+    }
   },
   {
     "id": "mob_1",
@@ -373,7 +389,11 @@
     },
     "prerequisiteNodeIds": [
       "mob_3l"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "MOBILITY",
+        "points": 15
+    }
   },
   {
     "id": "mob_4r",
@@ -391,7 +411,11 @@
     },
     "prerequisiteNodeIds": [
       "mob_3r"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "MOBILITY",
+        "points": 15
+    }
   },
   {
     "id": "mob_5c",
@@ -519,7 +543,11 @@
     "prerequisiteNodeIds": [
       "mob_6l",
       "mob_6c"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "MOBILITY",
+        "points": 36
+    }
   },
   {
     "id": "mob_7r",
@@ -538,7 +566,11 @@
     "prerequisiteNodeIds": [
       "mob_6r",
       "mob_6c"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "MOBILITY",
+        "points": 36
+    }
   },
   {
     "id": "surv_1",
@@ -644,7 +676,11 @@
     },
     "prerequisiteNodeIds": [
       "surv_3l"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "SURVIVAL",
+        "points": 15
+    }
   },
   {
     "id": "surv_4r",
@@ -662,7 +698,11 @@
     },
     "prerequisiteNodeIds": [
       "surv_3r"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "SURVIVAL",
+        "points": 15
+    }
   },
   {
     "id": "surv_5c",
@@ -789,7 +829,11 @@
     "prerequisiteNodeIds": [
       "surv_6l",
       "surv_6c"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "SURVIVAL",
+        "points": 36
+    }
   },
   {
     "id": "surv_7r",
@@ -808,6 +852,10 @@
     "prerequisiteNodeIds": [
       "surv_6r",
       "surv_6c"
-    ]
+    ],
+    "prerequisiteCategoryPoints": {
+        "category": "SURVIVAL",
+        "points": 36
+    }
   }
 ]
