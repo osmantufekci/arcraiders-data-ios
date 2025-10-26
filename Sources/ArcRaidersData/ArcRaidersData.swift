@@ -4,23 +4,53 @@ public class ArcRaidersDataInfo {
     public static let version = "1.0.0"
 }
 
-extension Foundation.Bundle {
-    /// Returns the resource bundle associated with the current Swift module.
-    public static var module: Bundle = {
-        let bundleName = "ArcRaidersData_ArcRaidersData"
-        
-        let candidates = [
-            Bundle.main.resourceURL,
-            Bundle(for: ArcRaidersDataInfo.self).resourceURL,
-            Bundle.main.bundleURL,
-        ]
-        
-        for candidate in candidates {
-            let bundlePath = candidate?.appendingPathComponent(bundleName + ".bundle")
-            if let bundle = bundlePath.flatMap(Bundle.init(url:)) {
-                return bundle
-            }
+public enum PackageDataError: LocalizedError {
+    case fileNotFound(String)
+    case dataReadFailed(String)
+
+    public var errorDescription: String? {
+        switch self {
+        case .fileNotFound(let filename):
+            return "Paket içinde \(filename) bulunamadı."
+        case .dataReadFailed(let filename):
+            return "Paket içindeki \(filename) dosyasından veri okunamadı."
         }
-        fatalError("unable to find bundle named BioSwift_BioSwift")
-    }()
+    }
+}
+
+public class ArcRaidersData {
+
+    public init() {}
+
+    private func loadData(from file: String) throws -> Data {
+        guard let url = Bundle.module.url(forResource: file, withExtension: "json", subdirectory: "Data") else {
+            throw PackageDataError.fileNotFound("\(file).json")
+        }
+
+        do {
+            return try Data(contentsOf: url)
+        } catch {
+            throw PackageDataError.dataReadFailed("\(file).json")
+        }
+    }
+
+    public func loadItemsData() throws -> Data {
+        return try loadData(from: "items")
+    }
+
+    public func loadQuestsData() throws -> Data {
+        return try loadData(from: "quests")
+    }
+
+    public func loadSkillNodesData() throws -> Data {
+        return try loadData(from: "skillNodes")
+    }
+
+    public func loadFactionsData() throws -> Data {
+        return try loadData(from: "factions")
+    }
+
+    public func loadLocationsData() throws -> Data {
+        return try loadData(from: "locations")
+    }
 }

@@ -4,3 +4,4 @@ images/items/.DS_Store
 *.xcworkspacedata
 *.xcuserstate
 
+.swiftpm/xcode/xcuserdata/kafein.xcuserdatad/xcschemes/xcschememanagement.plist

@@ -309,8 +309,8 @@
     "type": "Gear"
   },
   {
-    "id": "apreggio_i",
-    "name": "Apreggio I",
+    "id": "arpeggio_i",
+    "name": "Arpeggio I",
     "baseItemId": "apreggio_rifle",
     "tier": 1,
     "description": "A 3-round burst assault rifle.",
