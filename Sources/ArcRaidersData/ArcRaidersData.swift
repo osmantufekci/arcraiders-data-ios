@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 public class ArcRaidersDataInfo {
     public static let version = "1.0.0"
@@ -32,6 +33,10 @@ public class ArcRaidersData {
         } catch {
             throw PackageDataError.dataReadFailed("\(file).json")
         }
+    }
+
+    public func loadImage(name: String) -> Image {
+        return Image(name, bundle: Bundle.module)
     }
 
     public func loadArcs() throws -> Data {
